@@ -1,5 +1,6 @@
 :root{
     --penguin-face: white;
+    --penguin-picorna: orange;
 }
 
 body{
@@ -136,7 +137,7 @@ body{
 
 .beak{
     height: 10%;
-    background-color: orange;
+    background-color: var(--penguin-picorna);
     border-radius: 50%;
 }
 
@@ -175,6 +176,26 @@ body{
     border-radius: 80% 80% 100% 100%;
     top: 40%;
     left: 23.5%;
+}
+
+.foot{
+    width: 15%;
+    height: 30%;
+    background-color: var(--penguin-picorna);
+    top: 85%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.foot.left{
+    left: 25%;
+    transform: rotate(80deg);
+}
+
+.foot.right{
+    right: 25%;
+    transform: rotate(-80deg);
+
 }
 
 .penguin-body::before{
